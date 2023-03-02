@@ -1,0 +1,53 @@
+.ceasar__form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  width: 900px;
+  padding: 1em;
+  border: 1px solid $white-c;
+  border-radius: 1em;
+}
+
+.ceasar-file {
+  width: 14%;
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin: 8px 0;
+
+  gap: 10px;
+}
+
+.ceasar-foot {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.brute-force-keys {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ceasar__nav {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 30px;
+  padding: 15px;
+
+  border: 1px solid $beige-a1;
+  border-radius: 1em;
+
+}

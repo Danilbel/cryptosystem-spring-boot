@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  background-color: #c29c9c;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.center__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.display-none {
+  display: none;
+}
+
+.textarea {
+  padding: 8px 8px;
+  margin: 8px 0;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  background-color: #a19595;
+  border-radius: 7px;
+  border: 1px solid rgba(61, 61, 61, 0.8);
+}
+
+.textarea-ceasar {
+  width: 86%;
+  height: 450px;
+}
+
+.label {
+  width: 105px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 10px;
+  background-color: #a19595;
+  border-radius: 7px;
+  border: 1px solid rgba(61, 61, 61, 0.8);
+  opacity: 0.8;
+  transition: opacity 0.1s linear;
+}
+.label:hover {
+  opacity: 1;
+}
+.label:first-child, .label:last-child {
+  padding-left: 19px;
+}
+
+.input-key {
+  width: 25%;
+  padding: 8px 8px;
+  margin: 4px 0;
+  font-size: 16px;
+  outline: none;
+  background-color: #a19595;
+  border-radius: 7px;
+  border: 1px solid rgba(61, 61, 61, 0.8);
+}
+
+.input-key-ceasar-bf {
+  width: 30%;
+  margin-right: 30px;
+}
+
+.btn {
+  padding: 8px 8px;
+  margin: 4px 0;
+  font-size: 16px;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid rgba(61, 61, 61, 0.8);
+  opacity: 0.8;
+  transition: opacity 0.1s linear;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-res {
+  width: 17%;
+  background-color: #d3b4b4;
+}
+
+.btn-nav {
+  padding: 8px 7%;
+  color: #000000;
+  background-color: #d3b4b4;
+  text-decoration: none;
+}
+
+.header {
+  text-transform: uppercase;
+  width: 100%;
+  height: 80px;
+}
+
+/* ???????????????????? */
+/*.header.fixed {
+  height: auto;
+  position: fixed;
+  background-color: $beige;
+}*/
+/* ???????????????????? */
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  border-bottom: 1px solid #1f1e1e;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header__nav {
+  display: flex;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.nav__link {
+  margin-left: 50px;
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.1s linear;
+}
+.nav__link:first-child {
+  margin-left: 0;
+}
+.nav__link:hover {
+  opacity: 1;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  border-top: 1px solid #1f1e1e;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7px;
+}
+
+.footer__nav {
+  display: flex;
+  font-size: 14px;
+  font-weight: 800;
+  color: #424141;
+}
+
+.nav__item {
+  margin-left: 70px;
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.7;
+  transition: opacity 0.1s linear;
+}
+.nav__item:first-child {
+  margin-left: 0;
+}
+.nav__item:hover {
+  opacity: 1;
+}
+
+.ceasar__form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 900px;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 1em;
+}
+
+.ceasar-file {
+  width: 14%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 8px 0;
+  gap: 10px;
+}
+
+.ceasar-foot {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.brute-force-keys {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ceasar__nav {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #a19595;
+  border-radius: 1em;
+}
+
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=main.css.map */

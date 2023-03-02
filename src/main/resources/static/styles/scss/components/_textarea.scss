@@ -1,0 +1,17 @@
+.textarea {
+  padding: 8px 8px;
+  margin: 8px 0;
+  font-size: 16px;
+
+  resize: none;
+  outline: none;
+  background-color: $beige-a1;
+  border-radius: 7px;
+  border: 1px solid $gray-3d;
+}
+
+.textarea-ceasar {
+  width: 86%;
+  height: 450px;
+}
+

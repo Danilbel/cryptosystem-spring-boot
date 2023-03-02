@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>CryptoSystem</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header th:insert="blocks/header :: header" class="header"></header>
+
+<div class="container">
+    <div class="center__block">
+        <form class="ceasar__form">
+            <textarea class="textarea textarea-ceasar" type="text" name="text" placeholder="Text" th:text="${result} ?: ''" id="file-content"/>
+            <div class="ceasar-file">
+                <label class="label">Open file<input class="display-none" type="file" id="file-input"></label>
+                <label class="label" id="create-new">Create new</label>
+                <label class="label" id="download-file">Save file</label>
+            </div>
+            <div class="ceasar-foot">
+                <div class="brute-force-keys">
+                    <input class="input-key input-key-ceasar-bf" type="text" name="minKey" placeholder="min-key: 0"/>
+                    <input class="input-key input-key-ceasar-bf" type="text" name="maxKey" placeholder="max-key: 65536"/>
+                </div>
+                <input class="btn btn-res" formaction="/ceasar-brute-force/result" formmethod="post" type="submit" value="Start brute force" id="button-result"/>
+            </div>
+        </form>
+
+        <div class="ceasar__nav">
+            <a class="btn btn-nav" href="/ceasar-decrypt">Decrypt</a>
+            <a class="btn btn-nav" href="/ceasar-encrypt">Encrypt</a>
+        </div>
+    </div>
+</div>
+
+<footer th:insert="blocks/footer :: footer" class="footer"></footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
